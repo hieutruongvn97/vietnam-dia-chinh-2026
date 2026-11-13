@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Hồ Chí Minh",
+    "locationSlug": "ho-chi-minh",
+    "provinceCode": "79",
+    "legacyAddress": "Tỉnh Bà Rịa - Vũng Tàu, Hồ Chí Minh, Tỉnh Bình Dương"
+  },
+  {
+    "name": "Hà Nội",
+    "locationSlug": "ha-noi",
+    "provinceCode": "01",
+    "legacyAddress": "Hà Nội"
+  },
+  {
+    "name": "Đồng Nai",
+    "locationSlug": "dong-nai",
+    "provinceCode": "75",
+    "legacyAddress": "Tỉnh Đồng Nai, Tỉnh Bình Phước"
+  },
+  {
+    "name": "Đà Nẵng",
+    "locationSlug": "da-nang",
+    "provinceCode": "48",
+    "legacyAddress": "Đà Nẵng, Tỉnh Quảng Nam"
+  },
+  {
+    "name": "Cần Thơ",
+    "locationSlug": "can-tho",
+    "provinceCode": "92",
+    "legacyAddress": "Tỉnh Hậu Giang, Cần Thơ, Tỉnh Sóc Trăng"
+  },
+  {
+    "name": "Hải Phòng",
+    "locationSlug": "hai-phong",
+    "provinceCode": "31",
+    "legacyAddress": "Tỉnh Hải Dương, Hải Phòng"
+  },
+  {
+    "name": "Huế",
+    "locationSlug": "hue",
+    "provinceCode": "46",
+    "legacyAddress": "Huế"
+  },
+  {
+    "name": "Tỉnh An Giang",
+    "locationSlug": "tinh-an-giang",
+    "provinceCode": "91",
+    "legacyAddress": "Tỉnh Kiên Giang, Tỉnh An Giang"
+  },
+  {
+    "name": "Tỉnh Bắc Ninh",
+    "locationSlug": "tinh-bac-ninh",
+    "provinceCode": "24",
+    "legacyAddress": "Tỉnh Bắc Ninh, Tỉnh Bắc Giang"
+  },
+  {
+    "name": "Tỉnh Cà Mau",
+    "locationSlug": "tinh-ca-mau",
+    "provinceCode": "96",
+    "legacyAddress": "Tỉnh Bạc Liêu, Tỉnh Cà Mau"
+  },
+  {
+    "name": "Tỉnh Cao Bằng",
+    "locationSlug": "tinh-cao-bang",
+    "provinceCode": "04",
+    "legacyAddress": "Tỉnh Cao Bằng"
+  },
+  {
+    "name": "Tỉnh Đắk Lắk",
+    "locationSlug": "tinh-dak-lak",
+    "provinceCode": "66",
+    "legacyAddress": "Tỉnh Đắk Lắk, Tỉnh Phú Yên"
+  },
+  {
+    "name": "Tỉnh Điện Biên",
+    "locationSlug": "tinh-dien-bien",
+    "provinceCode": "11",
+    "legacyAddress": "Tỉnh Điện Biên"
+  },
+  {
+    "name": "Tỉnh Đồng Tháp",
+    "locationSlug": "tinh-dong-thap",
+    "provinceCode": "82",
+    "legacyAddress": "Tỉnh Đồng Tháp, Tỉnh Tiền Giang"
+  },
+  {
+    "name": "Tỉnh Gia Lai",
+    "locationSlug": "tinh-gia-lai",
+    "provinceCode": "52",
+    "legacyAddress": "Tỉnh Bình Định, Tỉnh Gia Lai"
+  },
+  {
+    "name": "Tỉnh Hà Tĩnh",
+    "locationSlug": "tinh-ha-tinh",
+    "provinceCode": "42",
+    "legacyAddress": "Tỉnh Hà Tĩnh"
+  },
+  {
+    "name": "Tỉnh Hưng Yên",
+    "locationSlug": "tinh-hung-yen",
+    "provinceCode": "33",
+    "legacyAddress": "Tỉnh Thái Bình, Tỉnh Hưng Yên"
+  },
+  {
+    "name": "Tỉnh Khánh Hòa",
+    "locationSlug": "tinh-khanh-hoa",
+    "provinceCode": "56",
+    "legacyAddress": "Tỉnh Ninh Thuận, Tỉnh Khánh Hòa"
+  },
+  {
+    "name": "Tỉnh Lai Châu",
+    "locationSlug": "tinh-lai-chau",
+    "provinceCode": "12",
+    "legacyAddress": "Tỉnh Lai Châu"
+  },
+  {
+    "name": "Tỉnh Lâm Đồng",
+    "locationSlug": "tinh-lam-dong",
+    "provinceCode": "68",
+    "legacyAddress": "Tỉnh Đăk Nông, Tỉnh Bình Thuận, Tỉnh Lâm Đồng"
+  },
+  {
+    "name": "Tỉnh Lạng Sơn",
+    "locationSlug": "tinh-lang-son",
+    "provinceCode": "20",
+    "legacyAddress": "Tỉnh Lạng Sơn"
+  },
+  {
+    "name": "Tỉnh Lào Cai",
+    "locationSlug": "tinh-lao-cai",
+    "provinceCode": "15",
+    "legacyAddress": "Tỉnh Yên Bái, Tỉnh Lào Cai"
+  },
+  {
+    "name": "Tỉnh Nghệ An",
+    "locationSlug": "tinh-nghe-an",
+    "provinceCode": "40",
+    "legacyAddress": "Tỉnh Nghệ An"
+  },
+  {
+    "name": "Tỉnh Ninh Bình",
+    "locationSlug": "tinh-ninh-binh",
+    "provinceCode": "37",
+    "legacyAddress": "Tỉnh Ninh Bình, Tỉnh Nam Định, Tỉnh Hà Nam"
+  },
+  {
+    "name": "Tỉnh Phú Thọ",
+    "locationSlug": "tinh-phu-tho",
+    "provinceCode": "25",
+    "legacyAddress": "Tỉnh Vĩnh Phúc, Tỉnh Phú Thọ, Tỉnh Hòa Bình"
+  },
+  {
+    "name": "Tỉnh Quảng Ngãi",
+    "locationSlug": "tinh-quang-ngai",
+    "provinceCode": "51",
+    "legacyAddress": "Tỉnh Quảng Ngãi, Tỉnh Kon Tum"
+  },
+  {
+    "name": "Tỉnh Quảng Ninh",
+    "locationSlug": "tinh-quang-ninh",
+    "provinceCode": "22",
+    "legacyAddress": "Tỉnh Quảng Ninh"
+  },
+  {
+    "name": "Tỉnh Quảng Trị",
+    "locationSlug": "tinh-quang-tri",
+    "provinceCode": "44",
+    "legacyAddress": "Tỉnh Quảng Bình, Tỉnh Quảng Trị"
+  },
+  {
+    "name": "Tỉnh Sơn La",
+    "locationSlug": "tinh-son-la",
+    "provinceCode": "14",
+    "legacyAddress": "Tỉnh Sơn La"
+  },
+  {
+    "name": "Tỉnh Tây Ninh",
+    "locationSlug": "tinh-tay-ninh",
+    "provinceCode": "80",
+    "legacyAddress": "Tỉnh Long An, Tỉnh Tây Ninh"
+  },
+  {
+    "name": "Tỉnh Thái Nguyên",
+    "locationSlug": "tinh-thai-nguyen",
+    "provinceCode": "19",
+    "legacyAddress": "Tỉnh Bắc Kạn, Tỉnh Thái Nguyên"
+  },
+  {
+    "name": "Tỉnh Thanh Hóa",
+    "locationSlug": "tinh-thanh-hoa",
+    "provinceCode": "38",
+    "legacyAddress": "Tỉnh Thanh Hóa"
+  },
+  {
+    "name": "Tỉnh Tuyên Quang",
+    "locationSlug": "tinh-tuyen-quang",
+    "provinceCode": "08",
+    "legacyAddress": "Tỉnh Tuyên Quang, Tỉnh Hà Giang"
+  },
+  {
+    "name": "Tỉnh Vĩnh Long",
+    "locationSlug": "tinh-vinh-long",
+    "provinceCode": "86",
+    "legacyAddress": "Tỉnh Bến Tre, Tỉnh Trà Vinh, Tỉnh Vĩnh Long"
+  }
+]

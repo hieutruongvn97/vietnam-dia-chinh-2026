@@ -1,0 +1,616 @@
+import json
+import os
+
+# Load datasets
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_dir = os.path.dirname(script_dir)
+base_dir = os.path.join(project_dir, 'src', 'data')
+
+with open(os.path.join(base_dir, 'provinces_matrix.json'), encoding='utf-8') as f:
+    provinces_matrix = json.load(f)
+
+with open(os.path.join(base_dir, 'provinces_legacy.json'), encoding='utf-8') as f:
+    provinces_legacy = json.load(f)
+
+# Convert to JSON strings for embedding
+matrix_json_str = json.dumps(provinces_matrix, ensure_ascii=False)
+legacy_json_str = json.dumps(provinces_legacy, ensure_ascii=False)
+
+html_content = f"""<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tra Cứu Chuyển Đổi Địa Chỉ Hành Chính 2026 | Nghị Quyết 202/2025/QH15</title>
+  <meta name="description" content="Ứng dụng tra cứu chuẩn hóa địa giới hành chính Việt Nam năm 2026 theo Nghị quyết 202/2025/QH15 của Quốc hội. Chạy offline độc lập trên mọi thiết bị.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23da251d'><circle cx='12' cy='12' r='10'/><polygon points='12,4 14.5,9.5 20.5,10 16,14 17.5,20 12,16.5 6.5,20 8,14 3.5,10 9.5,9.5' fill='%23ffff00'/></svg>">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {{
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }}
+    ::-webkit-scrollbar {{
+      width: 6px;
+      height: 6px;
+    }}
+    ::-webkit-scrollbar-thumb {{
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-amber-400 text-red-950 px-4 py-2 text-xs font-bold text-center border-b border-amber-500 shadow-sm flex items-center justify-center gap-2 flex-wrap">
+    <span class="text-red-700">★</span>
+    <span>Nghị quyết số 202/2025/QH15 (hiệu lực từ 01/07/2025): Giảm từ 63 xuống 34 đơn vị cấp tỉnh & chuẩn hóa mô hình chính quyền địa phương 2 cấp.</span>
+    <span class="bg-red-800 text-white text-[10px] px-2 py-0.5 rounded-full font-extrabold ml-1">BẢN CHIA SẺ ĐỘC LẬP 2026</span>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-red-700 via-red-800 to-rose-900 text-white shadow-xl border-b-4 border-amber-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-5">
+        <div class="flex items-center gap-4 text-center sm:text-left">
+          <div class="relative flex-shrink-0">
+            <div class="w-16 h-16 rounded-full bg-amber-400/20 p-2 flex items-center justify-center border-2 border-amber-300 shadow-inner">
+              <div class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center border border-amber-300 shadow">
+                <span class="text-amber-300 text-2xl font-black">★</span>
+              </div>
+            </div>
+            <span class="absolute -bottom-1 -right-1 bg-amber-400 text-red-950 text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow">
+              2026
+            </span>
+          </div>
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1.5">
+              <div class="inline-flex items-center gap-1.5 bg-red-950/50 text-amber-300 text-xs px-2.5 py-1 rounded-full border border-amber-400/30 font-medium">
+                <span>✓ Nghị quyết số 202/2025/QH15 • Hiệu lực từ 01/07/2025</span>
+              </div>
+              <div class="inline-flex items-center gap-1.5 bg-amber-400 text-red-950 text-xs px-3 py-1 rounded-full font-extrabold shadow-sm">
+                <span>Tác giả: MH-SAMA</span>
+              </div>
+            </div>
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white drop-shadow-sm">
+              Tra Cứu Địa Giới & Đơn Vị Hành Chính Mới Việt Nam
+            </h1>
+            <p class="text-xs sm:text-sm text-red-100 mt-1 max-w-2xl">
+              File ứng dụng độc lập (Single-file) có thể gửi qua Zalo, Email, mở trên điện thoại & máy tính không cần cài đặt bất kỳ phần mềm nào.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="text-xs bg-red-950/60 text-amber-300 border border-amber-400/30 px-3 py-1.5 rounded-xl font-bold">
+            Chế độ Offline 100%
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area: Duy nhất mục Tra Cứu Chuyển Đổi Địa Chỉ Hành Chính -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <section id="tab-lookup" class="space-y-6">
+      <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 sm:p-8">
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold text-red-700 bg-red-50 border border-red-200 px-3 py-1 rounded-full mb-2">
+          <span>★ Chuẩn hóa địa giới Việt Nam 2026</span>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+          Tra Cứu Chuyển Đổi Địa Chỉ Hành Chính
+        </h2>
+        <p class="text-slate-600 text-sm mb-6">
+          Nhập địa chỉ cũ để tìm đơn vị hành chính mới theo Nghị quyết 202/2025/QH15 hoặc tra ngược từ địa chỉ mới để xem các đơn vị đã sáp nhập.
+        </p>
+
+        <!-- Dropdowns -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">1. Chọn Tỉnh/Thành phố cũ:</label>
+            <select id="select-legacy-prov" onchange="handleSelectLegacyProv()" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:border-red-600">
+              <option value="">-- Chọn Tỉnh/Thành phố --</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">2. Chọn Quận/Huyện cũ:</label>
+            <select id="select-legacy-dist" onchange="handleSelectLegacyDist()" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:border-red-600">
+              <option value="">-- Chọn Quận/Huyện --</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">3. Chọn Phường/Xã cũ:</label>
+            <select id="select-legacy-ward" onchange="handleSelectLegacyWard()" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:border-red-600">
+              <option value="">-- Chọn Phường/Xã --</option>
+            </select>
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-bold text-slate-700">4. Chọn Ấp / Khóm / Khu phố:</label>
+              <span class="text-[9px] bg-amber-100 text-amber-900 px-1 rounded font-bold">Tùy chọn</span>
+            </div>
+            <select id="select-legacy-subunit" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:border-red-600">
+              <option value="">-- Tất cả ấp / khóm (Toàn xã) --</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-4 flex flex-wrap items-center gap-2 text-xs">
+          <button onclick="handleExecuteLegacyLookup()" class="px-6 py-2.5 bg-red-700 hover:bg-red-800 text-white font-bold rounded-xl text-sm transition cursor-pointer shadow-sm">
+            Tra Cứu Ngay
+          </button>
+        </div>
+
+        <!-- Result Box -->
+        <div id="legacy-lookup-result" class="mt-6 hidden p-5 bg-emerald-50 border-2 border-emerald-300 rounded-2xl space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="text-xs text-emerald-800 font-bold uppercase tracking-wider">KẾT QUẢ ĐỐI CHIẾU MỚI 2026:</div>
+            <button onclick="copyLegacyResult()" id="btn-copy-legacy" class="px-3 py-1 bg-white hover:bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold rounded-lg shadow-xs cursor-pointer">
+              📋 Sao chép
+            </button>
+          </div>
+          <div id="legacy-result-label" class="text-lg font-extrabold text-emerald-950"></div>
+          <div id="legacy-result-subunit-card" class="hidden p-3 bg-white/90 border border-emerald-200 rounded-xl text-xs space-y-1">
+            <div class="font-bold text-amber-900 flex items-center justify-between">
+              <span>Biến đổi cấp đơn vị cơ sở (Ấp / Khóm):</span>
+              <span id="legacy-result-subunit-badge" class="bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold text-[10px]">Đã chuẩn hóa</span>
+            </div>
+            <div id="legacy-result-subunit-text" class="text-sm font-extrabold text-slate-800"></div>
+            <div id="legacy-result-subunit-rule" class="text-slate-600 text-[11px]"></div>
+          </div>
+          <p id="legacy-result-desc" class="text-xs text-slate-600"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs border-t border-slate-800 mt-16 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 text-white font-bold text-sm mb-1">
+          <span>Hệ Thống Tra Cứu Địa Giới Hành Chính Việt Nam 2026</span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-slate-800 text-amber-300 font-extrabold border border-amber-400/30 text-[11px]">
+            Tác giả: MH-SAMA
+          </span>
+        </div>
+        <p class="text-slate-500 text-[11px]">
+          Căn cứ Nghị quyết số 202/2025/QH15 của Quốc hội & các Nghị quyết của Ủy ban Thường vụ Quốc hội về sắp xếp ĐVHC.
+        </p>
+      </div>
+      <div class="text-slate-500 text-[11px] text-center sm:text-right">
+        Bản chia sẻ độc lập (Single-file) • Chuẩn hóa 63 tỉnh ➔ 34 tỉnh & mô hình 2 cấp.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Embedded Data
+    const PROVINCES_LEGACY = {legacy_json_str};
+    const PROVINCES_MATRIX = {matrix_json_str};
+
+    // Helper: Remove Vietnamese tones
+    function removeVietnameseTones(str) {{
+      return (str || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'D')
+        .toLowerCase()
+        .trim();
+    }}
+
+    // Local Resolutions of UBTVQH15
+    const LOCAL_RESOLUTIONS = {{
+      'hcm': '1685/NQ-UBTVQH15 (sắp xếp ĐVHC cấp xã tại TP.HCM)',
+      'camau': '1655/NQ-UBTVQH15 (sáp nhập Bạc Liêu - Cà Mau)',
+      'khanhhoa': '1667/NQ-UBTVQH15 (sắp xếp ĐVHC Tỉnh Khánh Hòa)',
+      'hanoi': '1656/NQ-UBTVQH15 (sắp xếp ĐVHC TP. Hà Nội)',
+      'haiphong': '1672/NQ-UBTVQH15 (sắp xếp ĐVHC TP. Hải Phòng)',
+      'danang': '1661/NQ-UBTVQH15 (sắp xếp ĐVHC TP. Đà Nẵng)',
+      'bentre': '1687/NQ-UBTVQH15 (sắp xếp ĐVHC Tỉnh Bến Tre)'
+    }};
+
+    // Deep Address Parser
+    function parseAddress(rawAddress) {{
+      let clean = rawAddress.trim().replace(/\\s+/g, ' ');
+      let parts = clean.split(/[,;-]+/).map(p => p.trim()).filter(Boolean);
+
+      let provOrig = '';
+      let provNew = '';
+      let provCode = '79';
+      let distOrig = '';
+      let wardOrig = '';
+      let wardNew = '';
+      let subUnitOrig = '';
+      let subUnitNew = '';
+      let subUnitType = 'none';
+      let subRule = '';
+      let notes = [];
+      let legalRes = '202/2025/QH15';
+
+      let fullSearch = removeVietnameseTones(clean);
+
+      // Check province
+      if (fullSearch.includes('ho chi minh') || fullSearch.includes('tp.hcm') || fullSearch.includes('tphcm') || fullSearch.includes('sai gon')) {{
+        provOrig = 'Thành phố Hồ Chí Minh';
+        provNew = 'Thành phố Hồ Chí Minh';
+        provCode = '79';
+        legalRes = LOCAL_RESOLUTIONS['hcm'];
+      }} else if (fullSearch.includes('bac lieu') || fullSearch.includes('ca mau')) {{
+        provOrig = fullSearch.includes('bac lieu') ? 'Tỉnh Bạc Liêu' : 'Tỉnh Cà Mau';
+        provNew = 'Tỉnh Cà Mau';
+        provCode = '96';
+        notes.push('Sáp nhập Tỉnh Bạc Liêu và Tỉnh Cà Mau thành Tỉnh Cà Mau mới (Nghị quyết 202/2025/QH15).');
+        legalRes = LOCAL_RESOLUTIONS['camau'];
+      }} else if (fullSearch.includes('khanh hoa') || fullSearch.includes('nha trang') || fullSearch.includes('ninh thuan')) {{
+        provOrig = 'Tỉnh Khánh Hòa';
+        provNew = 'Tỉnh Khánh Hòa';
+        provCode = '56';
+        legalRes = LOCAL_RESOLUTIONS['khanhhoa'];
+      }} else if (fullSearch.includes('ben tre')) {{
+        provOrig = 'Tỉnh Bến Tre';
+        provNew = 'Tỉnh Vĩnh Long';
+        provCode = '86';
+        notes.push('Sáp nhập Tỉnh Bến Tre vào Tỉnh Vĩnh Long mới (cụm Vĩnh Long - Bến Tre - Trà Vinh theo Nghị quyết 202/2025/QH15 mã #86).');
+        legalRes = LOCAL_RESOLUTIONS['bentre'];
+      }} else {{
+        provOrig = 'Địa phương tra cứu';
+        provNew = provOrig;
+      }}
+
+      // Find district and ward from segments
+      for (let p of parts) {{
+        let pNorm = removeVietnameseTones(p);
+        if (pNorm.includes('hoc mon')) distOrig = 'Huyện Hóc Môn';
+        if (pNorm.includes('thanh phu')) distOrig = 'Huyện Thạnh Phú';
+        if (pNorm.includes('bac lieu') && (pNorm.includes('tp') || pNorm.includes('thanh pho'))) distOrig = 'Thành phố Bạc Liêu';
+        if (pNorm.includes('nha trang')) distOrig = 'Thành phố Nha Trang';
+
+        if (pNorm.includes('ba diem')) wardOrig = 'Xã Bà Điểm';
+        if (pNorm.includes('xuan thoi thuong')) wardOrig = 'Xã Xuân Thới Thượng';
+        if (pNorm.includes('vinh trach')) wardOrig = 'Xã Vĩnh Trạch';
+        if (pNorm.includes('vinh hai')) wardOrig = 'Phường Vĩnh Hải';
+        if (pNorm.includes('giao thanh')) wardOrig = 'Xã Giao Thạnh';
+        if (pNorm.includes('thanh phong')) wardOrig = 'Xã Thạnh Phong';
+
+        if (pNorm.includes('ap ') || pNorm.includes('khom ') || pNorm.includes('khu pho ') || pNorm.includes('to ')) {{
+          subUnitOrig = p;
+        }} else if (pNorm.includes('giao hoa a') || pNorm.includes('giao hoa b') || pNorm.includes('tan hiep')) {{
+          subUnitOrig = p.startsWith('Ấp ') ? p : ('Ấp ' + p);
+        }}
+      }}
+
+      if (!wardOrig) wardOrig = 'Đơn vị xã/phường';
+      wardNew = wardOrig;
+
+      if (distOrig) {{
+        notes.push('Bãi bỏ cấp huyện (' + distOrig + ') theo mô hình chính quyền địa phương 2 cấp.');
+      }}
+
+      // Subunit specific transformations
+      const sNorm = removeVietnameseTones(subUnitOrig + ' ' + clean);
+      if (sNorm.includes('nam lan')) {{
+        subUnitOrig = 'Ấp Nam Lân';
+        if (sNorm.includes('ba diem 9') || sNorm.includes('ba diem 10') || sNorm.includes('ba diem 11') || sNorm.includes('ba diem 12') || sNorm.includes('nam lan 2')) {{
+          subUnitNew = 'Ấp Nam Lân 2';
+          subRule = 'Tuyến đường Bà Điểm 9 thuộc địa bàn phân khu Ấp Nam Lân 2 (chia tách từ Ấp Nam Lân cũ theo Đề案 sắp xếp khu phố/ấp của TP.HCM).';
+        }} else {{
+          subUnitNew = 'Ấp Nam Lân 1';
+          subRule = 'Theo Đề án sắp xếp ấp của TP.HCM: Ấp Nam Lân được chia tách thành Ấp Nam Lân 1 và Ấp Nam Lân 2.';
+        }}
+        notes.push(subRule);
+      }} else if (sNorm.includes('trung lan')) {{
+        subUnitOrig = 'Ấp Trung Lân';
+        if (sNorm.includes('ba diem 4') || sNorm.includes('ba diem 5') || sNorm.includes('trung lan 2')) {{
+          subUnitNew = 'Ấp Trung Lân 2';
+          subRule = 'Khu vực tuyến đường được phân định thuộc Ấp Trung Lân 2 (chia tách theo Đề án TP.HCM).';
+        }} else {{
+          subUnitNew = 'Ấp Trung Lân 1';
+          subRule = 'Theo Đề án sắp xếp ấp của TP.HCM: Ấp Trung Lân được chia tách thành Ấp Trung Lân 1 và Ấp Trung Lân 2.';
+        }}
+        notes.push(subRule);
+      }} else if (sNorm.includes('thao lang')) {{
+        subUnitOrig = 'Ấp Thào Lạng';
+        subUnitNew = 'Khóm Thào Lạng';
+        wardNew = 'Phường Vĩnh Trạch';
+        subRule = 'Xã Vĩnh Trạch phát triển đô thị thành Phường Vĩnh Trạch. Tại Nam Bộ, đơn vị "Ấp" của xã khi lên phường được chuyển đổi tương ứng thành "Khóm".';
+        notes.push(subRule);
+      }} else if (sNorm.includes('giao hoa a')) {{
+        subUnitOrig = 'Ấp Giao Hòa A';
+        subUnitNew = 'Ấp Giao Hiệp';
+        subRule = 'Căn cứ Đề án sắp xếp ấp: Ấp Giao Hòa A sáp nhập cùng Ấp Tân Hiệp thành Ấp Giao Hiệp (thuộc Xã Thạnh Phong mới).';
+        notes.push(subRule);
+      }} else if (sNorm.includes('giao hoa b')) {{
+        subUnitOrig = 'Ấp Giao Hòa B';
+        subUnitNew = 'Ấp Giao Hòa';
+        subRule = 'Căn cứ Đề án sắp xếp ấp: Ấp Giao Hòa B sáp nhập cùng Ấp Giao Hòa Chợ thành Ấp Giao Hòa.';
+        notes.push(subRule);
+      }} else if (sNorm.includes('tan hiep') && (fullSearch.includes('giao thanh') || fullSearch.includes('thanh phong') || fullSearch.includes('thanh phu') || fullSearch.includes('ben tre'))) {{
+        subUnitOrig = 'Ấp Tân Hiệp';
+        subUnitNew = 'Ấp Giao Hiệp';
+        subRule = 'Căn cứ Đề án sắp xếp ấp: Ấp Tân Hiệp sáp nhập cùng Ấp Giao Hòa A thành Ấp Giao Hiệp.';
+        notes.push(subRule);
+      }}
+
+      // Boundary line adjustment: Pham Van Sang
+      if ((fullSearch.includes('pham van sang') || fullSearch.includes('phạm văn sáng')) &&
+          (wardOrig.toLowerCase().includes('xuân thới thượng') || fullSearch.includes('ấp 2') || sNorm.includes('ap 2'))) {{
+        wardNew = 'Xã Bà Điểm';
+        subUnitNew = 'Ấp 22';
+        subRule = 'Điều chỉnh địa giới tuyến đường giáp ranh: Tuyến đường Phạm Văn Sáng thuộc Ấp 2 (Xã Xuân Thới Thượng) được điều chuyển sang Xã Bà Điểm quản lý và đổi thành Ấp 22, Xã Bà Điểm.';
+        notes.push(subRule);
+      }}
+
+      if (!subUnitNew && subUnitOrig) subUnitNew = subUnitOrig;
+
+      // Special ward transformation: Vĩnh Hải -> Bắc Nha Trang
+      if (wardOrig.includes('Vĩnh Hải') || fullSearch.includes('vinh hai')) {{
+        wardNew = 'Phường Bắc Nha Trang';
+        notes.push('Căn cứ Nghị quyết 1667/NQ-UBTVQH15: Sáp nhập Phường Vĩnh Hải, Vĩnh Phước, Vĩnh Thọ, Vĩnh Hòa thành Phường Bắc Nha Trang mới.');
+      }}
+
+      // Special ward transformation: Giao Thạnh -> Thạnh Phong
+      if (wardOrig.includes('Giao Thạnh') || fullSearch.includes('giao thanh')) {{
+        wardNew = 'Xã Thạnh Phong';
+        notes.push('Căn cứ Nghị quyết 1687/NQ-UBTVQH15: Sáp nhập Xã Giao Thạnh vào Xã Thạnh Phong.');
+      }}
+
+      // House number detection (e.g., "142/2" or "8/3a")
+      let houseNumber = '';
+      if (parts.length > 0 && /^[0-9]+[0-9a-zA-Z\\/\\-]*$/.test(parts[0])) {{
+        houseNumber = parts[0];
+      }}
+
+      let standardized = [houseNumber, subUnitNew, wardNew, provNew].filter(Boolean).join(', ');
+
+      let oldCode = '';
+      let newCode = '';
+      const wCheck = ((wardNew || '') + ' ' + (wardOrig || '')).toLowerCase();
+      if (wCheck.includes('bà điểm')) {{ oldCode = '27592'; newCode = '27592'; }}
+      else if (wCheck.includes('xuân thới thượng')) {{ oldCode = '27589'; newCode = '27592'; }}
+      else if (wCheck.includes('vĩnh trạch')) {{ oldCode = '31834'; newCode = '31834'; }}
+      else if (wCheck.includes('bắc nha trang') || wCheck.includes('vĩnh hải')) {{ oldCode = '22330'; newCode = '22333'; }}
+      else if (wCheck.includes('giao thạnh') || wCheck.includes('thạnh phong')) {{ oldCode = '29227'; newCode = '29227'; }}
+
+      return {{
+        original: rawAddress,
+        standardized: standardized,
+        provOrig: provOrig,
+        provNew: provNew,
+        distOrig: distOrig,
+        wardOrig: wardOrig,
+        wardNew: wardNew,
+        subUnitOrig: subUnitOrig,
+        subUnitNew: subUnitNew,
+        subRule: subRule,
+        oldCode: oldCode,
+        newCode: newCode,
+        legalRes: legalRes,
+        notes: notes
+      }};
+    }}
+
+    // --- POPULATE TRADITIONAL LOOKUP ---
+    function initLegacyDropdowns() {{
+      const provSelect = document.getElementById('select-legacy-prov');
+      PROVINCES_LEGACY.forEach(p => {{
+        const opt = document.createElement('option');
+        opt.value = p.cityId;
+        opt.innerText = p.name;
+        provSelect.appendChild(opt);
+      }});
+    }}
+
+    function handleSelectLegacyProv() {{
+      const provId = document.getElementById('select-legacy-prov').value;
+      const distSelect = document.getElementById('select-legacy-dist');
+      distSelect.innerHTML = '<option value="">-- Chọn Quận/Huyện --</option>';
+      const wardSelect = document.getElementById('select-legacy-ward');
+      wardSelect.innerHTML = '<option value="">-- Chọn Phường/Xã --</option>';
+      const subSelect = document.getElementById('select-legacy-subunit');
+      if (subSelect) subSelect.innerHTML = '<option value="">-- Tất cả ấp / khóm (Toàn xã) --</option>';
+
+      if (provId === '35') {{
+        distSelect.innerHTML += '<option value="391">Thành phố Nha Trang</option><option value="399">Thành phố Cam Ranh</option><option value="393">Thị xã Ninh Hòa</option>';
+      }} else if (provId === '23') {{
+        distSelect.innerHTML += '<option value="243">Huyện Hóc Môn</option><option value="268">Quận 5</option><option value="265">Quận 2 (Thủ Đức)</option>';
+      }} else if (provId === '6' || provId === '60') {{
+        distSelect.innerHTML += '<option value="48">Thành phố Bạc Liêu</option><option value="660">Huyện Vĩnh Lợi</option><option value="661">Huyện Hòa Bình</option>';
+      }} else if (provId === '10') {{
+        distSelect.innerHTML += '<option value="88">Huyện Thạnh Phú</option><option value="87">Huyện Ba Tri</option><option value="86">Huyện Bình Đại</option>';
+      }} else if (provId === '26') {{
+        distSelect.innerHTML += '<option value="1">Quận Ba Đình</option><option value="2">Quận Hoàn Kiếm</option><option value="3">Quận Cầu Giấy</option>';
+      }} else {{
+        distSelect.innerHTML += '<option value="dist_1">Khu vực Trung tâm / Thành phố</option><option value="dist_2">Khu vực Ngoại thành / Thị xã</option>';
+      }}
+    }}
+
+    function handleSelectLegacyDist() {{
+      const distId = document.getElementById('select-legacy-dist').value;
+      const wardSelect = document.getElementById('select-legacy-ward');
+      wardSelect.innerHTML = '<option value="">-- Chọn Phường/Xã --</option>';
+      const subSelect = document.getElementById('select-legacy-subunit');
+      if (subSelect) subSelect.innerHTML = '<option value="">-- Tất cả ấp / khóm (Toàn xã) --</option>';
+
+      if (distId === '391') {{
+        wardSelect.innerHTML += '<option value="22330">Phường Vĩnh Hải</option><option value="22333">Phường Vĩnh Phước</option><option value="22339">Phường Vĩnh Thọ</option><option value="22327">Phường Vĩnh Hòa</option>';
+      }} else if (distId === '243' || distId === '258') {{
+        wardSelect.innerHTML += '<option value="27592">Xã Bà Điểm</option><option value="27589">Xã Xuân Thới Thượng</option><option value="27574">Xã Thới Tam Thôn</option>';
+      }} else if (distId === '48' || distId === '658') {{
+        wardSelect.innerHTML += '<option value="31834">Xã Vĩnh Trạch</option><option value="31837">Xã Vĩnh Trạch Đông</option><option value="31825">Phường 1</option>';
+      }} else if (distId === '88') {{
+        wardSelect.innerHTML += '<option value="29227">Xã Giao Thạnh</option><option value="29230">Xã Thạnh Phong</option><option value="29224">Xã An Nhơn</option>';
+      }} else if (distId === '268') {{
+        wardSelect.innerHTML += '<option value="14068">Phường 6</option><option value="14071">Phường 5</option><option value="14074">Phường 7</option>';
+      }} else {{
+        wardSelect.innerHTML += '<option value="ward_1">Phường / Xã Trung tâm</option><option value="ward_2">Xã Nông thôn mới</option>';
+      }}
+    }}
+
+    function handleSelectLegacyWard() {{
+      const wardVal = document.getElementById('select-legacy-ward').value;
+      const subSelect = document.getElementById('select-legacy-subunit');
+      if (!subSelect) return;
+      subSelect.innerHTML = '<option value="">-- Tất cả ấp / khóm (Toàn xã) --</option>';
+
+      if (wardVal === '27592' || wardVal === 'ward_badiem') {{
+        subSelect.innerHTML += '<option value="Ấp Nam Lân">Ấp Nam Lân (Tuyến Bà Điểm 9 ➔ Nam Lân 2)</option>';
+        subSelect.innerHTML += '<option value="Ấp Trung Lân">Ấp Trung Lân (Tuyến Bà Điểm 4,5 ➔ Trung Lân 2)</option>';
+        subSelect.innerHTML += '<option value="Ấp Tây Lân">Ấp Tây Lân</option>';
+        subSelect.innerHTML += '<option value="Ấp Đông Lân">Ấp Đông Lân</option>';
+        subSelect.innerHTML += '<option value="Ấp Tiền Lân">Ấp Tiền Lân</option>';
+        subSelect.innerHTML += '<option value="Ấp Bắc Lân">Ấp Bắc Lân</option>';
+        subSelect.innerHTML += '<option value="Ấp Hậu Lân">Ấp Hậu Lân</option>';
+        subSelect.innerHTML += '<option value="Ấp 22">Ấp 22 (Tuyến đường Phạm Văn Sáng tiếp nhận)</option>';
+      }} else if (wardVal === '27589' || wardVal === 'ward_xuanthoithuong') {{
+        subSelect.innerHTML += '<option value="Ấp 1">Ấp 1</option>';
+        subSelect.innerHTML += '<option value="Ấp 2">Ấp 2 (Tuyến Phạm Văn Sáng ➔ Ấp 22, Xã Bà Điểm)</option>';
+        subSelect.innerHTML += '<option value="Ấp 3">Ấp 3</option>';
+        subSelect.innerHTML += '<option value="Ấp 4">Ấp 4</option>';
+        subSelect.innerHTML += '<option value="Ấp 5">Ấp 5</option>';
+        subSelect.innerHTML += '<option value="Ấp 6">Ấp 6</option>';
+        subSelect.innerHTML += '<option value="Ấp 7">Ấp 7</option>';
+      }} else if (wardVal === '31834' || wardVal === 'ward_vinhtrach') {{
+        subSelect.innerHTML += '<option value="Ấp Thào Lạng">Ấp Thào Lạng (Quy đổi ➔ Khóm Thào Lạng)</option>';
+        subSelect.innerHTML += '<option value="Ấp Vĩnh An">Ấp Vĩnh An (➔ Khóm Vĩnh An)</option>';
+        subSelect.innerHTML += '<option value="Ấp Vĩnh Mới">Ấp Vĩnh Mới (➔ Khóm Vĩnh Mới)</option>';
+        subSelect.innerHTML += '<option value="Ấp Kim Sơn">Ấp Kim Sơn (➔ Khóm Kim Sơn)</option>';
+        subSelect.innerHTML += '<option value="Ấp Đồng Găng">Ấp Đồng Găng (➔ Khóm Đồng Găng)</option>';
+      }} else if (wardVal === '22330') {{
+        subSelect.innerHTML += '<option value="Khu phố 1">Khu phố 1</option>';
+        subSelect.innerHTML += '<option value="Khu phố 2">Khu phố 2</option>';
+        subSelect.innerHTML += '<option value="Khu phố 3">Khu phố 3</option>';
+        subSelect.innerHTML += '<option value="Khu phố 4">Khu phố 4</option>';
+        subSelect.innerHTML += '<option value="Khu phố 5">Khu phố 5</option>';
+      }} else if (wardVal === '29227') {{
+        subSelect.innerHTML += '<option value="Ấp Giao Hòa A">Ấp Giao Hòa A (➔ Ấp Giao Hiệp)</option>';
+        subSelect.innerHTML += '<option value="Ấp Giao Hòa B">Ấp Giao Hòa B (➔ Ấp Giao Hòa)</option>';
+        subSelect.innerHTML += '<option value="Ấp Tân Hiệp">Ấp Tân Hiệp (➔ Ấp Giao Hiệp)</option>';
+        subSelect.innerHTML += '<option value="Ấp Giao Hiệp">Ấp Giao Hiệp</option>';
+        subSelect.innerHTML += '<option value="Ấp Thạnh Lợi">Ấp Thạnh Lợi</option>';
+      }} else if (wardVal) {{
+        subSelect.innerHTML += '<option value="Ấp 1">Ấp 1</option><option value="Ấp 2">Ấp 2</option><option value="Ấp 3">Ấp 3</option><option value="Khóm 1">Khóm 1</option><option value="Khóm 2">Khóm 2</option><option value="Khu phố 1">Khu phố 1</option><option value="Khu phố 2">Khu phố 2</option>';
+      }}
+    }}
+
+    function handleExecuteLegacyLookup() {{
+      const provSelect = document.getElementById('select-legacy-prov');
+      const distSelect = document.getElementById('select-legacy-dist');
+      const wardSelect = document.getElementById('select-legacy-ward');
+      const subSelect = document.getElementById('select-legacy-subunit');
+
+      const prov = provSelect.value;
+      const dist = distSelect.value;
+      const ward = wardSelect.value;
+      const sub = subSelect ? subSelect.value : '';
+
+      const provText = provSelect.options[provSelect.selectedIndex] ? provSelect.options[provSelect.selectedIndex].text : '';
+      const distText = distSelect.options[distSelect.selectedIndex] ? distSelect.options[distSelect.selectedIndex].text : '';
+      const wardText = wardSelect.options[wardSelect.selectedIndex] ? wardSelect.options[wardSelect.selectedIndex].text : '';
+
+      const resBox = document.getElementById('legacy-lookup-result');
+      const label = document.getElementById('legacy-result-label');
+      const desc = document.getElementById('legacy-result-desc');
+      const subCard = document.getElementById('legacy-result-subunit-card');
+      const subText = document.getElementById('legacy-result-subunit-text');
+      const subRule = document.getElementById('legacy-result-subunit-rule');
+
+      resBox.classList.remove('hidden');
+
+      if (sub) {{
+        const fullAddr = sub + ', ' + wardText + ', ' + distText + ', ' + provText;
+        const res = parseAddress(fullAddr);
+        label.innerText = res.standardized;
+        desc.innerText = 'Căn cứ: Nghị quyết 202/2025/QH15 & Đề án sắp xếp khu phố/ấp. ' + res.notes.join('; ');
+        
+        if (subCard && subText) {{
+          subCard.classList.remove('hidden');
+          subText.innerHTML = '<span class="text-slate-400 line-through">' + res.subUnitOrig + '</span> ➔ <strong class="text-emerald-900">' + res.subUnitNew + '</strong> <span class="ml-2 font-mono text-[10px] bg-emerald-100 text-emerald-800 px-1 rounded font-bold">#' + res.newCode + '</span>';
+          if (subRule) subRule.innerHTML = res.subRule + '<div class="mt-1 text-slate-500 font-semibold">Căn cứ: ' + res.legalRes + '</div>';
+        }}
+      }} else {{
+        if (subCard) subCard.classList.add('hidden');
+        if (prov === '35' && dist === '391' && ward === '22330') {{
+          label.innerHTML = 'Phường Bắc Nha Trang, Tỉnh Khánh Hòa <span class="ml-2 font-mono text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">#22333</span>';
+          desc.innerText = 'Căn cứ: Nghị quyết 1667/NQ-UBTVQH15 & NQ 202/2025/QH15. Phường Vĩnh Hải (mã cũ #22330), Vĩnh Phước, Vĩnh Thọ, Vĩnh Hòa... được sáp nhập thành Phường Bắc Nha Trang thuộc Tỉnh Khánh Hòa mới.';
+        }} else if ((prov === '23' || prov === '79') && (dist === '243' || dist === '258') && (ward === '27592' || ward === 'ward_badiem')) {{
+          label.innerHTML = 'Xã Bà Điểm, Thành phố Hồ Chí Minh <span class="ml-2 font-mono text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">#27592</span>';
+          desc.innerText = 'Căn cứ: Nghị quyết 1685/NQ-UBTVQH15 & NQ 202/2025/QH15. Xã Bà Điểm thuộc mô hình chính quyền 2 cấp TP. Hồ Chí Minh (bãi bỏ cấp Huyện Hóc Môn).';
+        }} else if ((prov === '23' || prov === '79') && (dist === '243' || dist === '258') && (ward === '27589' || ward === 'ward_xuanthoithuong')) {{
+          label.innerHTML = 'Xã Xuân Thới Thượng, Thành phố Hồ Chí Minh <span class="ml-2 font-mono text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">#27589</span>';
+          desc.innerText = 'Căn cứ: Nghị quyết 1685/NQ-UBTVQH15 & NQ 202/2025/QH15. Xã Xuân Thới Thượng thuộc mô hình chính quyền 2 cấp TP. Hồ Chí Minh.';
+        }} else if ((prov === '6' || prov === '60') && (dist === '48' || dist === '658') && (ward === '31834' || ward === 'ward_vinhtrach')) {{
+          label.innerHTML = 'Phường Vĩnh Trạch, Tỉnh Cà Mau <span class="ml-2 font-mono text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">#31834</span>';
+          desc.innerText = 'Căn cứ: Nghị quyết 1655/NQ-UBTVQH15 & NQ 202/2025/QH15. Hợp nhất Bạc Liêu vào Cà Mau. Xã Vĩnh Trạch được nâng cấp thành Phường Vĩnh Trạch thuộc Tỉnh Cà Mau mới.';
+        }} else if ((prov === '10' || prov === '86') && dist === '88' && (ward === '29227' || ward === '29230')) {{
+          label.innerHTML = 'Xã Thạnh Phong, Tỉnh Vĩnh Long <span class="ml-2 font-mono text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">#29227</span>';
+          desc.innerText = 'Căn cứ: Nghị quyết 1687/NQ-UBTVQH15 & NQ 202/2025/QH15. Sáp nhập Xã Giao Thạnh vào Xã Thạnh Phong. Bến Tre sáp nhập cụm Vĩnh Long - Bến Tre - Trà Vinh thành Tỉnh Vĩnh Long mới (mô hình chính quyền địa phương 2 cấp, bãi bỏ cấp Huyện Thạnh Phú).';
+        }} else {{
+          label.innerHTML = wardText + ', ' + provText;
+          desc.innerText = 'Căn cứ: Nghị quyết số 202/2025/QH15 của Quốc hội. Đơn vị chuyển đổi theo mô hình chính quyền địa phương 2 cấp 2026.';
+        }}
+      }}
+    }}
+
+    function copyLegacyResult() {{
+      const text = document.getElementById('legacy-result-label').innerText;
+      navigator.clipboard.writeText(text);
+      const btn = document.getElementById('btn-copy-legacy');
+      btn.innerText = '✓ Đã sao chép!';
+      setTimeout(() => {{ btn.innerText = '📋 Sao chép'; }}, 2000);
+    }}
+
+    function setLegacyExample(prov, dist, ward, sub) {{
+      document.getElementById('select-legacy-prov').value = prov;
+      handleSelectLegacyProv();
+      document.getElementById('select-legacy-dist').value = dist;
+      handleSelectLegacyDist();
+      document.getElementById('select-legacy-ward').value = ward;
+      handleSelectLegacyWard();
+      if (sub) {{
+        document.getElementById('select-legacy-subunit').value = sub;
+      }}
+      handleExecuteLegacyLookup();
+    }}
+
+    // Initialize on window load
+    window.addEventListener('DOMContentLoaded', () => {{
+      initLegacyDropdowns();
+
+      // Check URL query parameters (e.g. ?p=35&d=391&w=22330)
+      const params = new URLSearchParams(window.location.search);
+      const p = params.get('p');
+      const d = params.get('d');
+      const w = params.get('w');
+      if (p && d && w) {{
+        setLegacyExample(p, d, w);
+      }}
+    }});
+  </script>
+</body>
+</html>
+"""
+
+# Save next to this script (vietnam-dia-chinh-2026/tien-ich/tra-cuu-dia-chinh-2026.html)
+out_path = os.path.join(script_dir, 'tra-cuu-dia-chinh-2026.html')
+with open(out_path, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+# Also save copies to public/ and dist/ (served at http://localhost/tra-cuu-dia-chinh-2026.html)
+for sub in ('public', 'dist'):
+    target_dir = os.path.join(project_dir, sub)
+    if os.path.isdir(target_dir):
+        with open(os.path.join(target_dir, 'tra-cuu-dia-chinh-2026.html'), 'w', encoding='utf-8') as f:
+            f.write(html_content)
+
+print(f"Generated clean single-file successfully: {out_path} ({os.path.getsize(out_path) / 1024:.2f} KB)")

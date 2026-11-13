@@ -1,0 +1,639 @@
+[
+  {
+    "code": "79",
+    "name": "Thành phố Hồ Chí Minh",
+    "type": "Thành phố trực thuộc Trung ương",
+    "region": "Đông Nam Bộ",
+    "center": "Quận 1 / Khu Trung tâm hiện hữu",
+    "legacyProvinces": [
+      "Hồ Chí Minh",
+      "Tỉnh Bình Dương",
+      "Tỉnh Bà Rịa - Vũng Tàu"
+    ],
+    "areaKm2": 6772,
+    "population": 14500000,
+    "summary": "Siêu đô thị hạt nhân kinh tế, tài chính, công nghệ và cảng biển lớn nhất cả nước kết hợp công nghiệp hiện đại Bình Dương và cụm cảng nước sâu Cái Mép - Thị Vải.",
+    "highlights": [
+      "Bao gồm Đặc khu Côn Đảo",
+      "Mô hình siêu đô thị quốc tế",
+      "Đô thị loại đặc biệt"
+    ]
+  },
+  {
+    "code": "01",
+    "name": "Thành phố Hà Nội",
+    "type": "Thành phố trực thuộc Trung ương",
+    "region": "Đồng bằng sông Hồng",
+    "center": "Quận Hoàn Kiếm / Ba Đình",
+    "legacyProvinces": [
+      "Thành phố Hà Nội"
+    ],
+    "areaKm2": 3359,
+    "population": 8500000,
+    "summary": "Thủ đô của nước CHXHCN Việt Nam, trung tâm đầu não chính trị, văn hóa, giáo dục và khoa học công nghệ của cả nước.",
+    "highlights": [
+      "Đô thị loại đặc biệt",
+      "Trung tâm hành chính quốc gia",
+      "Phát triển theo mô hình đa cực"
+    ]
+  },
+  {
+    "code": "31",
+    "name": "Thành phố Hải Phòng",
+    "type": "Thành phố trực thuộc Trung ương",
+    "region": "Đồng bằng sông Hồng",
+    "center": "Khu đô thị Bắc Sông Cấm",
+    "legacyProvinces": [
+      "Thành phố Hải Phòng",
+      "Tỉnh Hải Dương"
+    ],
+    "areaKm2": 3192,
+    "population": 4150000,
+    "summary": "Cửa ngõ biển lớn nhất miền Bắc kết hợp vùng công nghiệp - chế biến sâu Hải Dương, hình thành chuỗi logistics hàng hải và công nghiệp công nghệ cao.",
+    "highlights": [
+      "Trung tâm cảng biển quốc tế Lạch Huyện",
+      "Đặc khu Cát Hải - Bạch Long Vĩ"
+    ]
+  },
+  {
+    "code": "48",
+    "name": "Thành phố Đà Nẵng",
+    "type": "Thành phố trực thuộc Trung ương",
+    "region": "Duyên hải Nam Trung Bộ",
+    "center": "Trung tâm hành chính Đà Nẵng",
+    "legacyProvinces": [
+      "Thành phố Đà Nẵng",
+      "Tỉnh Quảng Nam"
+    ],
+    "areaKm2": 11859,
+    "population": 2850000,
+    "summary": "Đô thị hạt nhân phát triển kinh tế biển, đổi mới sáng tạo, tài chính quốc tế và trung tâm du lịch di sản văn hóa thế giới (Hội An, Mỹ Sơn).",
+    "highlights": [
+      "Trung tâm tài chính quốc tế",
+      "Khu kinh tế mở Chu Lai",
+      "Trung tâm bán dẫn miền Trung"
+    ]
+  },
+  {
+    "code": "92",
+    "name": "Thành phố Cần Thơ",
+    "type": "Thành phố trực thuộc Trung ương",
+    "region": "Đồng bằng sông Cửu Long",
+    "center": "Quận Ninh Kiều / Cái Răng",
+    "legacyProvinces": [
+      "Thành phố Cần Thơ",
+      "Tỉnh Hậu Giang",
+      "Tỉnh Sóc Trăng"
+    ],
+    "areaKm2": 6340,
+    "population": 3650000,
+    "summary": "Đô thị hạt nhân và trung tâm kinh tế, dịch vụ logistics, thương mại, đào tạo và công nghệ nông nghiệp của toàn vùng ĐBSCL kết nối ra cảng biển Trần Đề.",
+    "highlights": [
+      "Cảng nước sâu quốc tế Trần Đề",
+      "Trung tâm logistics ĐBSCL",
+      "Đô thị sông nước sinh thái"
+    ]
+  },
+  {
+    "code": "46",
+    "name": "Thành phố Huế",
+    "type": "Thành phố trực thuộc Trung ương",
+    "region": "Bắc Trung Bộ",
+    "center": "Thành phố Huế",
+    "legacyProvinces": [
+      "Tỉnh Thừa Thiên Huế"
+    ],
+    "areaKm2": 4902,
+    "population": 1200000,
+    "summary": "Đô thị di sản văn hóa quốc gia và quốc tế, trung tâm du lịch, y tế chuyên sâu, giáo dục đại học chất lượng cao của cả nước.",
+    "highlights": [
+      "Thành phố văn hóa - di sản thế giới",
+      "Trung tâm y tế chuyên sâu",
+      "Đại học Huế trọng điểm quốc gia"
+    ]
+  },
+  {
+    "code": "75",
+    "name": "Tỉnh Đồng Nai",
+    "type": "Tỉnh",
+    "region": "Đông Nam Bộ",
+    "center": "Thành phố Biên Hòa / Long Thành",
+    "legacyProvinces": [
+      "Tỉnh Đồng Nai",
+      "Tỉnh Bình Phước"
+    ],
+    "areaKm2": 12738,
+    "population": 4350000,
+    "summary": "Cực tăng trưởng công nghiệp, logistics hàng không quốc tế kết nối cửa khẩu quốc tế Hoa Lư và sân bay quốc tế Long Thành.",
+    "highlights": [
+      "Cảng hàng không quốc tế Long Thành",
+      "Vùng công nghiệp phụ trợ quy mô lớn"
+    ]
+  },
+  {
+    "code": "91",
+    "name": "Tỉnh An Giang",
+    "type": "Tỉnh",
+    "region": "Đồng bằng sông Cửu Long",
+    "center": "Thành phố Long Xuyên / Rạch Giá",
+    "legacyProvinces": [
+      "Tỉnh An Giang",
+      "Tỉnh Kiên Giang"
+    ],
+    "areaKm2": 9888,
+    "population": 3800000,
+    "summary": "Trung tâm nông - thủy sản xuất khẩu hàng đầu cả nước, kinh tế cửa khẩu và du lịch biển đảo quốc tế Phú Quốc.",
+    "highlights": [
+      "Bao gồm Đảo ngọc Phú Quốc",
+      "Vựa lúa và thủy sản trọng điểm quốc gia",
+      "Kinh tế biên mậu Campuchia"
+    ]
+  },
+  {
+    "code": "24",
+    "name": "Tỉnh Bắc Ninh",
+    "type": "Tỉnh",
+    "region": "Đồng bằng sông Hồng",
+    "center": "Thành phố Bắc Ninh",
+    "legacyProvinces": [
+      "Tỉnh Bắc Ninh",
+      "Tỉnh Bắc Giang"
+    ],
+    "areaKm2": 4717,
+    "population": 3350000,
+    "summary": "Thủ phủ công nghiệp công nghệ cao, bán dẫn và sản xuất linh kiện điện tử lớn nhất miền Bắc (vùng văn hóa Kinh Bắc).",
+    "highlights": [
+      "Trung tâm sản xuất bán dẫn & thiết bị di động",
+      "Di sản văn hóa quan họ Kinh Bắc"
+    ]
+  },
+  {
+    "code": "96",
+    "name": "Tỉnh Cà Mau",
+    "type": "Tỉnh",
+    "region": "Đồng bằng sông Cửu Long",
+    "center": "Thành phố Cà Mau",
+    "legacyProvinces": [
+      "Tỉnh Cà Mau",
+      "Tỉnh Bạc Liêu"
+    ],
+    "areaKm2": 7958,
+    "population": 2150000,
+    "summary": "Vùng đất cực Nam Tổ quốc, trung tâm công nghiệp năng lượng tái tạo (điện gió ngoài khơi) và chế biến thủy hải sản xuất khẩu.",
+    "highlights": [
+      "Mũi Cà Mau - Cực Nam Tổ quốc",
+      "Trung tâm năng lượng sạch ngoài khơi",
+      "Khu kinh tế Hòn Khoai"
+    ]
+  },
+  {
+    "code": "04",
+    "name": "Tỉnh Cao Bằng",
+    "type": "Tỉnh",
+    "region": "Đông Bắc Bộ",
+    "center": "Thành phố Cao Bằng",
+    "legacyProvinces": [
+      "Tỉnh Cao Bằng"
+    ],
+    "areaKm2": 6700,
+    "population": 540000,
+    "summary": "Vùng đất cội nguồn cách mạng, biên cương phên dậu phía Bắc, công viên địa chất toàn cầu Non Nước Cao Bằng.",
+    "highlights": [
+      "Công viên địa chất UNESCO Non Nước Cao Bằng",
+      "Thác Bản Giốc",
+      "Cửa khẩu quốc tế Trà Lĩnh"
+    ]
+  },
+  {
+    "code": "66",
+    "name": "Tỉnh Đắk Lắk",
+    "type": "Tỉnh",
+    "region": "Tây Nguyên - Duyên hải",
+    "center": "Thành phố Buôn Ma Thuột",
+    "legacyProvinces": [
+      "Tỉnh Đắk Lắk",
+      "Tỉnh Phú Yên"
+    ],
+    "areaKm2": 18073,
+    "population": 2800000,
+    "summary": "Hành lang kinh tế kết nối Tây Nguyên - Duyên hải miền Trung, từ thủ phủ cà phê Buôn Ma Thuột đến cảng biển Vũng Rô và vịnh Xuân Đài.",
+    "highlights": [
+      "Thủ phủ cà phê thế giới Buôn Ma Thuột",
+      "Hành lang kinh tế Đông - Tây",
+      "Cảng biển nước sâu Vũng Rô"
+    ]
+  },
+  {
+    "code": "11",
+    "name": "Tỉnh Điện Biên",
+    "type": "Tỉnh",
+    "region": "Tây Bắc Bộ",
+    "center": "Thành phố Điện Biên Phủ",
+    "legacyProvinces": [
+      "Tỉnh Điện Biên"
+    ],
+    "areaKm2": 9541,
+    "population": 630000,
+    "summary": "Vùng đất lịch sử Điện Biên Phủ anh hùng, trung tâm kết nối văn hóa - du lịch và an ninh quốc phòng vùng ngã ba biên giới Việt - Lào - Trung.",
+    "highlights": [
+      "Quần thể di tích chiến thắng Điện Biên Phủ",
+      "Cửa khẩu quốc tế Tây Trang",
+      "Cột mốc số 0 A Pa Chải"
+    ]
+  },
+  {
+    "code": "82",
+    "name": "Tỉnh Đồng Tháp",
+    "type": "Tỉnh",
+    "region": "Đồng bằng sông Cửu Long",
+    "center": "Thành phố Mỹ Tho / Cao Lãnh",
+    "legacyProvinces": [
+      "Tỉnh Đồng Tháp",
+      "Tỉnh Tiền Giang"
+    ],
+    "areaKm2": 5898,
+    "population": 3400000,
+    "summary": "Cửa ngõ kết nối TP.HCM với ĐBSCL, vựa trái cây và hoa kiểng nhiệt đới quy mô lớn nhất nước cùng kinh tế cửa khẩu Thường Phước.",
+    "highlights": [
+      "Vùng chuyên canh trái cây nhiệt đới Tiền Giang - Đồng Tháp",
+      "Khu du lịch sinh thái Tràm Chim"
+    ]
+  },
+  {
+    "code": "52",
+    "name": "Tỉnh Gia Lai",
+    "type": "Tỉnh",
+    "region": "Tây Nguyên - Duyên hải",
+    "center": "Thành phố Quy Nhơn / Pleiku",
+    "legacyProvinces": [
+      "Tỉnh Gia Lai",
+      "Tỉnh Bình Định"
+    ],
+    "areaKm2": 21568,
+    "population": 3100000,
+    "summary": "Cực tăng trưởng kết nối Tây Nguyên ra cảng biển quốc tế Quy Nhơn, trung tâm năng lượng tái tạo, công nghệ AI và du lịch biển Kỳ Co - Eo Gió.",
+    "highlights": [
+      "Trung tâm nghiên cứu khoa học và AI Quy Nhơn",
+      "Cảng quốc tế Quy Nhơn",
+      "Cửa khẩu quốc tế Lệ Thanh"
+    ]
+  },
+  {
+    "code": "42",
+    "name": "Tỉnh Hà Tĩnh",
+    "type": "Tỉnh",
+    "region": "Bắc Trung Bộ",
+    "center": "Thành phố Hà Tĩnh",
+    "legacyProvinces": [
+      "Tỉnh Hà Tĩnh"
+    ],
+    "areaKm2": 5994,
+    "population": 1300000,
+    "summary": "Trung tâm công nghiệp nặng, cảng biển nước sâu Vũng Áng và logistics cửa khẩu quốc tế Cầu Treo sang Lào.",
+    "highlights": [
+      "Khu kinh tế Vũng Áng",
+      "Cảng biển nước sâu Sơn Dương",
+      "Khu di tích Đại thi hào Nguyễn Du"
+    ]
+  },
+  {
+    "code": "33",
+    "name": "Tỉnh Hưng Yên",
+    "type": "Tỉnh",
+    "region": "Đồng bằng sông Hồng",
+    "center": "Thành phố Hưng Yên / Thái Bình",
+    "legacyProvinces": [
+      "Tỉnh Hưng Yên",
+      "Tỉnh Thái Bình"
+    ],
+    "areaKm2": 2516,
+    "population": 3200000,
+    "summary": "Vùng đô thị công nghiệp phụ trợ, nông nghiệp công nghệ cao và kinh tế ven biển vịnh Bắc Bộ gắn với thương cảng Phố Hiến lịch sử.",
+    "highlights": [
+      "Khu kinh tế ven biển Thái Bình",
+      "Đô thị vệ tinh công nghiệp thủ đô",
+      "Di tích văn hóa Phố Hiến"
+    ]
+  },
+  {
+    "code": "56",
+    "name": "Tỉnh Khánh Hòa",
+    "type": "Tỉnh",
+    "region": "Duyên hải Nam Trung Bộ",
+    "center": "Thành phố Nha Trang",
+    "legacyProvinces": [
+      "Tỉnh Khánh Hòa",
+      "Tỉnh Ninh Thuận"
+    ],
+    "areaKm2": 8511,
+    "population": 2000000,
+    "summary": "Trung tâm kinh tế biển quốc gia, trung tâm du lịch - dịch vụ biển đảo đẳng cấp quốc tế vịnh Nha Trang, Cam Ranh và vịnh Vĩnh Hy.",
+    "highlights": [
+      "Đặc khu Trường Sa",
+      "Vịnh Cam Ranh & Cảng quốc tế",
+      "Trung tâm năng lượng xanh Ninh Thuận"
+    ]
+  },
+  {
+    "code": "12",
+    "name": "Tỉnh Lai Châu",
+    "type": "Tỉnh",
+    "region": "Tây Bắc Bộ",
+    "center": "Thành phố Lai Châu",
+    "legacyProvinces": [
+      "Tỉnh Lai Châu"
+    ],
+    "areaKm2": 9069,
+    "population": 480000,
+    "summary": "Địa đầu Tây Bắc, vùng núi cao hùng vĩ, trung tâm phát triển sâm Lai Châu quý hiếm và kinh tế cửa khẩu Ma Lù Thàng.",
+    "highlights": [
+      "Đỉnh Pu Si Lung, Bạch Mộc Lương Tử",
+      "Thương hiệu Quốc gia Sâm Lai Châu",
+      "Cửa khẩu quốc tế Ma Lù Thàng"
+    ]
+  },
+  {
+    "code": "68",
+    "name": "Tỉnh Lâm Đồng",
+    "type": "Tỉnh",
+    "region": "Tây Nguyên - Duyên hải",
+    "center": "Thành phố Đà Lạt / Phan Thiết",
+    "legacyProvinces": [
+      "Tỉnh Lâm Đồng",
+      "Tỉnh Bình Thuận",
+      "Tỉnh Đắk Nông"
+    ],
+    "areaKm2": 24233,
+    "population": 3200000,
+    "summary": "Siêu tỉnh liên kết Cao nguyên và Biển, tích hợp thủ phủ du lịch nghỉ dưỡng Đà Lạt, kinh tế bauxit Đắk Nông và thủ đô resort biển Mũi Né.",
+    "highlights": [
+      "Thành phố ngàn hoa Đà Lạt",
+      "Khu du lịch quốc gia Mũi Né",
+      "Công viên địa chất toàn cầu Đắk Nông"
+    ]
+  },
+  {
+    "code": "20",
+    "name": "Tỉnh Lạng Sơn",
+    "type": "Tỉnh",
+    "region": "Đông Bắc Bộ",
+    "center": "Thành phố Lạng Sơn",
+    "legacyProvinces": [
+      "Tỉnh Lạng Sơn"
+    ],
+    "areaKm2": 8310,
+    "population": 800000,
+    "summary": "Cửa ngõ giao thương đường bộ lớn nhất giữa Việt Nam - Trung Quốc và các nước ASEAN với cửa khẩu quốc tế Hữu Nghị.",
+    "highlights": [
+      "Cửa khẩu quốc tế Hữu Nghị",
+      "Khu kinh tế cửa khẩu Đồng Đăng",
+      "Di tích Ải Chi Lăng"
+    ]
+  },
+  {
+    "code": "15",
+    "name": "Tỉnh Lào Cai",
+    "type": "Tỉnh",
+    "region": "Tây Bắc Bộ",
+    "center": "Thành phố Lào Cai / Yên Bái",
+    "legacyProvinces": [
+      "Tỉnh Lào Cai",
+      "Tỉnh Yên Bái"
+    ],
+    "areaKm2": 13264,
+    "population": 1600000,
+    "summary": "Cực tăng trưởng vùng Tây Bắc trên hành lang kinh tế Côn Minh - Hải Phòng, sở hữu trung tâm du lịch quốc tế Sa Pa và danh thắng Mù Cang Chải.",
+    "highlights": [
+      "Khu du lịch quốc gia Sa Pa",
+      "Ruộng bậc thang Mù Cang Chải",
+      "Cửa khẩu quốc tế Lào Cai"
+    ]
+  },
+  {
+    "code": "40",
+    "name": "Tỉnh Nghệ An",
+    "type": "Tỉnh",
+    "region": "Bắc Trung Bộ",
+    "center": "Thành phố Vinh",
+    "legacyProvinces": [
+      "Tỉnh Nghệ An"
+    ],
+    "areaKm2": 16490,
+    "population": 3450000,
+    "summary": "Tỉnh có diện tích lớn nhất Việt Nam, quê hương Chủ tịch Hồ Chí Minh, trung tâm kinh tế - giáo dục - y tế của vùng Bắc Trung Bộ.",
+    "highlights": [
+      "Đô thị hạt nhân Thành phố Vinh mở rộng",
+      "Khu di tích Kim Liên - Nam Đàn",
+      "Khu kinh tế Đông Nam Nghệ An"
+    ]
+  },
+  {
+    "code": "37",
+    "name": "Tỉnh Ninh Bình",
+    "type": "Tỉnh",
+    "region": "Đồng bằng sông Hồng",
+    "center": "Thành phố Ninh Bình / Phủ Lý",
+    "legacyProvinces": [
+      "Tỉnh Ninh Bình",
+      "Tỉnh Nam Định",
+      "Tỉnh Hà Nam"
+    ],
+    "areaKm2": 3942,
+    "population": 4200000,
+    "summary": "Vùng đất Cố đô và trung tâm công nghiệp công nghệ cao, cơ khí ô tô kết hợp di sản văn hóa - thiên nhiên kép Tràng An.",
+    "highlights": [
+      "Quần thể danh thắng Tràng An di sản kép UNESCO",
+      "Trung tâm công nghiệp ô tô & linh kiện",
+      "Thánh địa Đền Trần"
+    ]
+  },
+  {
+    "code": "25",
+    "name": "Tỉnh Phú Thọ",
+    "type": "Tỉnh",
+    "region": "Trung du & Miền núi phía Bắc",
+    "center": "Thành phố Việt Trì / Vĩnh Yên",
+    "legacyProvinces": [
+      "Tỉnh Phú Thọ",
+      "Tỉnh Vĩnh Phúc",
+      "Tỉnh Hòa Bình"
+    ],
+    "areaKm2": 9489,
+    "population": 3600000,
+    "summary": "Vùng đất Tổ cội nguồn dân tộc, tích hợp trung tâm công nghiệp ô tô - xe máy Vĩnh Phúc và nguồn năng lượng thủy điện Hòa Bình.",
+    "highlights": [
+      "Khu di tích lịch sử Đền Hùng",
+      "Thủy điện Hòa Bình",
+      "Khu công nghiệp điện tử - cơ khí chính xác"
+    ]
+  },
+  {
+    "code": "51",
+    "name": "Tỉnh Quảng Ngãi",
+    "type": "Tỉnh",
+    "region": "Duyên hải Nam Trung Bộ",
+    "center": "Thành phố Quảng Ngãi",
+    "legacyProvinces": [
+      "Tỉnh Quảng Ngãi",
+      "Tỉnh Kon Tum"
+    ],
+    "areaKm2": 14833,
+    "population": 1850000,
+    "summary": "Hành lang kinh tế kết nối Bắc Tây Nguyên với cảng biển nước sâu Dung Quất, vùng lọc hóa dầu và trung tâm du lịch sinh thái Măng Đen.",
+    "highlights": [
+      "Đặc khu Đảo Lý Sơn",
+      "Nhà máy Lọc dầu Dung Quất",
+      "Khu du lịch sinh thái Măng Đen"
+    ]
+  },
+  {
+    "code": "22",
+    "name": "Tỉnh Quảng Ninh",
+    "type": "Tỉnh",
+    "region": "Đông Bắc Bộ",
+    "center": "Thành phố Hạ Long",
+    "legacyProvinces": [
+      "Tỉnh Quảng Ninh"
+    ],
+    "areaKm2": 6178,
+    "population": 1400000,
+    "summary": "Đầu tàu kinh tế vùng Đông Bắc, trung tâm du lịch quốc tế Vịnh Hạ Long - Bái Tử Long, đặc khu kinh tế Vân Đồn và cảng biển nước sâu.",
+    "highlights": [
+      "Di sản thiên nhiên thế giới Vịnh Hạ Long",
+      "Sân bay quốc tế & Khu kinh tế Vân Đồn",
+      "Cửa khẩu quốc tế Móng Cái"
+    ]
+  },
+  {
+    "code": "44",
+    "name": "Tỉnh Quảng Trị",
+    "type": "Tỉnh",
+    "region": "Bắc Trung Bộ",
+    "center": "Thành phố Đồng Hới / Đông Hà",
+    "legacyProvinces": [
+      "Tỉnh Quảng Trị",
+      "Tỉnh Quảng Bình"
+    ],
+    "areaKm2": 12797,
+    "population": 1600000,
+    "summary": "Trục hành lang kinh tế Đông - Tây kết nối Lào - Thái Lan, sở hữu vương quốc hang động Phong Nha - Kẻ Bàng và các di tích lịch sử cách mạng hào hùng.",
+    "highlights": [
+      "Di sản thiên nhiên UNESCO Phong Nha - Kẻ Bàng",
+      "Cửa khẩu quốc tế Lao Bảo",
+      "Di tích Thành Cổ Quảng Trị"
+    ]
+  },
+  {
+    "code": "14",
+    "name": "Tỉnh Sơn La",
+    "type": "Tỉnh",
+    "region": "Tây Bắc Bộ",
+    "center": "Thành phố Sơn La",
+    "legacyProvinces": [
+      "Tỉnh Sơn La"
+    ],
+    "areaKm2": 14123,
+    "population": 1300000,
+    "summary": "Vùng chuyên canh cây ăn quả lớn nhất miền Bắc, trung tâm năng lượng tái tạo và thủy điện Sơn La lớn nhất Đông Nam Á cùng cao nguyên Mộc Châu.",
+    "highlights": [
+      "Khu du lịch quốc gia Mộc Châu",
+      "Nhà máy Thủy điện Sơn La lớn nhất ĐNA",
+      "Thủ phủ cây ăn quả phía Bắc"
+    ]
+  },
+  {
+    "code": "80",
+    "name": "Tỉnh Tây Ninh",
+    "type": "Tỉnh",
+    "region": "Đông Nam Bộ",
+    "center": "Thành phố Tân An / Tây Ninh",
+    "legacyProvinces": [
+      "Tỉnh Tây Ninh",
+      "Tỉnh Long An"
+    ],
+    "areaKm2": 8535,
+    "population": 3000000,
+    "summary": "Vành đai kết nối TP.HCM với ĐBSCL và biên mậu Campuchia, vùng công nghiệp cảng quốc tế Long An và du lịch tâm linh Núi Bà Đen.",
+    "highlights": [
+      "Khu du lịch quốc gia Núi Bà Đen",
+      "Cảng quốc tế Long An",
+      "Cửa khẩu quốc tế Mộc Bài"
+    ]
+  },
+  {
+    "code": "19",
+    "name": "Tỉnh Thái Nguyên",
+    "type": "Tỉnh",
+    "region": "Đông Bắc Bộ",
+    "center": "Thành phố Thái Nguyên",
+    "legacyProvinces": [
+      "Tỉnh Thái Nguyên",
+      "Tỉnh Bắc Kạn"
+    ],
+    "areaKm2": 8404,
+    "population": 1700000,
+    "summary": "Trung tâm giáo dục đại học, công nghiệp luyện kim, công nghệ cao Samsung và du lịch hồ Ba Bể danh lam thắng cảnh quốc gia.",
+    "highlights": [
+      "Tổ hợp sản xuất công nghệ cao Samsung",
+      "Đại học Thái Nguyên trọng điểm",
+      "Danh thắng Hồ Ba Bể"
+    ]
+  },
+  {
+    "code": "38",
+    "name": "Tỉnh Thanh Hóa",
+    "type": "Tỉnh",
+    "region": "Bắc Trung Bộ",
+    "center": "Thành phố Thanh Hóa",
+    "legacyProvinces": [
+      "Tỉnh Thanh Hóa"
+    ],
+    "areaKm2": 11114,
+    "population": 3750000,
+    "summary": "Cực tăng trưởng kết nối Bắc Trung Bộ với Đồng bằng sông Hồng, khu kinh tế động lực Nghi Sơn và trung tâm du lịch biển Sầm Sơn.",
+    "highlights": [
+      "Khu kinh tế trọng điểm Nghi Sơn",
+      "Di sản văn hóa thế giới Thành nhà Hồ",
+      "Đô thị du lịch biển Sầm Sơn"
+    ]
+  },
+  {
+    "code": "08",
+    "name": "Tỉnh Tuyên Quang",
+    "type": "Tỉnh",
+    "region": "Đông Bắc Bộ",
+    "center": "Thành phố Tuyên Quang / Hà Giang",
+    "legacyProvinces": [
+      "Tỉnh Tuyên Quang",
+      "Tỉnh Hà Giang"
+    ],
+    "areaKm2": 13788,
+    "population": 1750000,
+    "summary": "Thủ đô kháng chiến lịch sử Tân Trào kết hợp cao nguyên đá Đồng Văn hùng vĩ, phên dậu địa đầu cực Bắc Tổ quốc (cột cờ Lũng Cú).",
+    "highlights": [
+      "Công viên địa chất UNESCO Cao nguyên đá Đồng Văn",
+      "Cột cờ quốc gia Lũng Cú - Cực Bắc",
+      "Khu di tích lịch sử Quốc gia Tân Trào"
+    ]
+  },
+  {
+    "code": "86",
+    "name": "Tỉnh Vĩnh Long",
+    "type": "Tỉnh",
+    "region": "Đồng bằng sông Cửu Long",
+    "center": "Thành phố Vĩnh Long / Bến Tre",
+    "legacyProvinces": [
+      "Tỉnh Vĩnh Long",
+      "Tỉnh Bến Tre",
+      "Tỉnh Trà Vinh"
+    ],
+    "areaKm2": 6289,
+    "population": 3150000,
+    "summary": "Trọng tâm vùng đất phù sa trù phú ba cù lao sông Tiền - sông Cổ Chiên, xứ dừa Bến Tre, kinh tế sinh thái miệt vườn và văn hóa Khmer Trà Vinh.",
+    "highlights": [
+      "Xứ sở dừa quốc gia Bến Tre",
+      "Trung tâm cây giống hoa kiểng Chợ Lách",
+      "Văn hóa Khmer & Biển Ba Động"
+    ]
+  }
+]
